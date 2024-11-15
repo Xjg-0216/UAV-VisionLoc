@@ -1,0 +1,7 @@
+data/
+result_*/
+src/test/
+*.onnx
+model/
+logs/
+__pycache__/
