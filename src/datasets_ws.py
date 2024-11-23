@@ -978,7 +978,7 @@ class TripletsDataset(BaseDataset):
                 replace=False,
             )
 
-            # Remove hard_negatives
+            # Remove the eventual soft_positives from neg_indexes
             if args.prior_location_threshold == -1:
                 neg_indexes = np.setdiff1d(neg_indexes, soft_positives, assume_unique=True)[
                     : self.negs_num_per_query
